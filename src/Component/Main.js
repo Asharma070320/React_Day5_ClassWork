@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Card from "./Card";
 function Main() {
   let [Subject, setSubject] = useState("");
   let [Number, setNumber] = useState(0);
@@ -36,11 +37,9 @@ function Main() {
         <button className="btn" onClick={clickBtn}>Add+</button>
 
         {
-            Planner.map((data)=>(
-                <div className="white">
-                {data.subjectInput} - {data.hourInput} Hours
-                </div>
-            ))
+            Planner.map((data)=>{
+              return <Card {...data} />
+            })
         }
 
       </div>

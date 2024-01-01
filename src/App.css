@@ -91,3 +91,9 @@
   font-size: 17px;
   color: white;
 }
+.middle{
+  display: flex;
+  gap: 10px;
+  color: white;
+  font-size: 16px;
+}
